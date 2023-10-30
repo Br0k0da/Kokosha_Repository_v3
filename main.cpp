@@ -30,4 +30,7 @@ int delenie1(int pA,int pB, int pC){
 
 void numA(int &pA){
     cin >> pA;
+
+void numB(int &pC){
+    cin >> pC;
 }
