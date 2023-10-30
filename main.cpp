@@ -1,3 +1,5 @@
 int delenie1(int pA,int pB, int pC){
-    return ((pA-pB)%pC);
+    cout << "Hi";
+	return ((pA-pB)%pC);
+    
 }
