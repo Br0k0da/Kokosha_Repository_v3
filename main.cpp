@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 using namespace std;
@@ -21,4 +22,8 @@ int main()
     
     cout << "Остаток от деления разности чисел А и В на число С: " << delenie1 << endl;
     cout << "Целая часть от деления числа А на сумму чисел В и С: " << delenie2 << endl;
+
+int delenie2(int pA,int pB, int pC){
+    return (pA / (pB+pC));
+
 }
