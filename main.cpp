@@ -25,7 +25,9 @@ int numC(string pC, bool& T) {
     else { cout << endl << "Необходимо ЧИСЛО больше ноля!!!" << endl; T = 0; }
 }
 
-
+int delenie1(int pA,int pB, int pC){
+	return ((pA-pB)%pC);
+}
 
 int main()
 {
