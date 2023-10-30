@@ -1,36 +1,31 @@
 #include <iostream>
+#include <string>
+#include <stdlib.h>
 
 using namespace std;
 
-int delenie2(int pA,int pB, int pC){
-    return (pA / (pB+pC));
-
-int delenie1(int pA,int pB, int pC){
-    return ((pA-pB)%pC);
-
-void numA(int &pA){
-    cin >> pA;
-
-void numB(int &pC){
-    cin >> pC;
-
 int main()
 {
-    int A,B,C;
-    
-    
-    cout << "Введите целое число A: ";
-    cin >> A; cout << endl;
-    
-    cout << "Введите целое число B: ";
-    cin >> B; cout << endl;
-    
-    cout << "Введите целое число C: ";
-    cin >> C; cout << endl;
-    
-    int delenie1 = (A-B)%C;
-    int delenie2 = A / (B+C);
-    
-    cout << "Остаток от деления разности чисел А и В на число С: " << delenie1 << endl;
-    cout << "Целая часть от деления числа А на сумму чисел В и С: " << delenie2 << endl;
+    setlocale(LC_ALL, "");
+    string A, B, C;
+    int a, b, c;
+    bool T = 1;
+
+    cout << "Введите целое число A (>0): ";
+    a = numA(A, T); cout << endl;
+
+    if (T != 1) { return 0; }
+
+    cout << "Введите целое число B (>0): ";
+    b = numB(B, T); cout << endl;
+
+    if (T != 1) { return 0; }
+
+    cout << "Введите целое число C (>0): ";
+    c = numC(C, T); cout << endl;
+
+    if (T != 1) { return 0; }
+
+    cout << "Остаток от деления разности чисел А и В на число С: " << delenie1(a, b, c) << endl;
+    cout << "Целая часть от деления числа А на сумму чисел В и С: " << delenie2(a, b, c) << endl;
 }
