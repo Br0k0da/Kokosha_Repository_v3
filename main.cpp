@@ -12,6 +12,14 @@ int numA(string pA, bool& T) {
     else { cout << endl << "!!!!!!!!Необходимо ЧИСЛО больше ноля!!!!!!!!" << endl;}
 }
 
+int numB(string pB, bool& T) {
+    cout << "Введите целое число B (>0): ";
+    cin >> pB;
+    int pb = atoi(pB.c_str());
+    if (pb > 0) {T=1; return pb; }
+    else { cout << endl << "!!!!!!!!Необходимо ЧИСЛО больше ноля!!!!!!!!" << endl;}
+}
+
 
 
 int delenie1(int pA,int pB, int pC){
@@ -48,3 +56,6 @@ int main()
     cout << "Остаток от деления разности чисел А и В на число С: " << delenie1(a, b, c) << endl;
     cout << "Целая часть от деления числа А на сумму чисел В и С: " << delenie2(a, b, c) << endl;
 }
+
+
+
